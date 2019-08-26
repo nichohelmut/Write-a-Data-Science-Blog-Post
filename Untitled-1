@@ -1,0 +1,36 @@
+# def continent_hosts(confederation):
+#     l_uefa_world_cups =  list(df_champions[df_champions['Confederation'] == confederation]['Years of Champion'])
+#     for r in range(0,len(l_uefa_world_cups)):
+#         l_uefa_world_cups[r] = l_uefa_world_cups[r].split()
+#     return l_uefa_world_cups
+
+# import re
+# def extract_numbers(values):
+#     response = []
+#     for v in df_all_time['Best finish']:
+#         finish  = re.findall('(?P<value>[\d]*[.]?[\d]{1,2})\s*(?P<Champion>)?', v)
+#         years = {}
+#         result = 0
+#         for value, currency in finish:
+#             partial = int(value)
+#             result = partial
+#             years[result] = result 
+#         response.append(list(years.keys()))     
+#     return response
+
+# def convert_to_string(value):
+#     li = []
+#     for v in value:
+#         string = "{v}".format(v=v)
+#         li.append(string)
+#     return li
+
+# # Adds a new column 'Years of Champion', which extracts the year the world cup was won and adds it 
+# # to 'Years of Champion' column'
+
+# def champion_column(value):
+#     value['Years of Champion'] = 1
+#     l_years = convert_to_string(extract_numbers(value['Best finish']))
+#     n = len(l_years)
+#     for r in range(0,n):
+#         value['Years of Champion'][r] = l_years[r].replace('[', '').replace(']', '')

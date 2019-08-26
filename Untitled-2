@@ -1,0 +1,3 @@
+((df_adjusted.loc[df_adjusted[df_adjusted['Country'].str.contains(v)].index[0], "W"] - 
+                        ((d_host_counts[v] + (d_host_counts[v] ) * 3) + ((df_adjusted.loc[df_adjusted[df_adjusted['Country'].str.contains(v)].index[0], "D"] - 
+                        d_host_counts[v] + (d_host_counts[v] )) * 1 ))))
